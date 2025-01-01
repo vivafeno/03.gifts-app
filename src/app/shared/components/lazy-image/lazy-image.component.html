@@ -1,0 +1,22 @@
+
+<div class="d-flex justify-content-center">
+
+    <!-- Imagen que se quiere cargar. Tiene el trigger de "Imagen Cargada" -->
+    <img
+        class="card-img-top animate__animated animate__fadeIn"
+        [src]="url"
+        [alt]="alt"
+        (load)="onLoad()"
+        [ngStyle]="{ 'display': hasLoaded ? 'block' : 'none' }" />
+
+    <!-- SVG que se muestra mientras se carga la imagen -->
+    <img
+        *ngIf="!hasLoaded"
+        src="assets/images/loading.svg"
+        height="45"
+        width="45"
+        class="text-white"
+        alt="Loading..."/>
+    
+
+</div>

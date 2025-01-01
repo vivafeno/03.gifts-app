@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { Gif } from '../../../interfaces/gifs.intefaces';
+import { Gif } from '../../interfaces/gifs.intefaces';
 
 @Component({
   selector: 'gifs-card-list',

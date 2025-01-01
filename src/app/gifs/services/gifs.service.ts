@@ -8,7 +8,7 @@ export class GifsService {
 
   public gifsList: Gif[] = [];
   private _tagsHistory: string[] = [];
-  private apiKey: string = 'mj8csU1RhvMA03jK1bqIoAZTtFERamVh';
+  private apiKey: string = 'KN68IQHqEkUGGFsN3B23UrFmyOgHPDLu';
   private serviceUrl: string = 'https://api.giphy.com/v1/gifs';
 
   constructor(
@@ -50,7 +50,7 @@ export class GifsService {
     const params = new HttpParams()
       .set('api_key', this.apiKey)
       .set('q', tag)
-      .set('limit', '10')
+      .set('limit', '5')
       .set('offset', '0');
 
     this.http
